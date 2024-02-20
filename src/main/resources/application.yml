@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banch_processing
+    username: postgres
+    password: yash2005
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
